@@ -5,33 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-Type" content="text/html">
     <title>Associacao Desportiva Gremio</title>
+    <link rel="stylesheet" href="Estilos.css">
 </head>
 <body>
-    <header>
-        <div class="conteinerCabecalho">
-            <ul>
-                <li><a href="Index.html"><img src="Logo.png" alt="logo-ADGremio"></a></li>
-            </ul>
-            <nav>
-                <ul>
-                    <li><a href="#"><button>Futebol</button></a></li>
-                    <li><a href="#"><button>Xadrez</button></a></li>
-                    <li><a href="#"><button>Basket</button></a></li>
-                    <li><a href="#"><button>produtos</button></a></li>
-                </ul>
-            </nav>
-        </div>
+    <header id="header">
+        <div class="conteinerCabecalho"><!--Inicio conteinerCabecalho-->
+            <div class="flex"><!--InicioFlex-->
+                <a href="index.html"><img id="ImagemLogo" src="imagens/Logo1.jpg" alt="logo-ADGremio"></a>
+               
+                <nav class="nav"><!--InicioNav-->
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="SobreNos.html">Sobre Nós</a></li>
+                        <li><a href="Produtos.html">Produtos</a></li>
+                        <li><a href="#Disportos">Modalidades</a></li>
+                    </ul>
+                </nav><!--FimNav-->
+                <div class="contacto"><!--InicioContacto-->
+                    <a href="#conteinerContactos"><button class="butao-contacto">Contacto</button></a>
+                </div><!--FimContacto-->
+            </div> <!--FimFlex-->
+        </div> <!--FimconteinerCabecalho-->
     </header>
+    <section class="banner">
+        <h1>ASSOCIÇÃO DESPORTIVA <samp>GRÊMIO</samp></h1>
+        <H2>A SUA NOVA CASA PARA PRATICAR O SEU DISPORTO FAVORITO!</H2>
+    </section>
     <hr>
     <main>
         <section class="CursorImagem">
             <div class="imagem1"></div>
             <div class="imagem2"></div>
+            <div class="imagem3"></div>
+            <div class="imagem4"></div>
         </section>
-        <div class="Futebol"></div>
-        <div class="Xadrez"></div>
-        <div class="Basket"></div>
-        <div class="Produtos"></div>
+        <div class="Disportos">
+            <div class="Futebol"></div>
+            <div class="Xadrez"></div>
+            <div class="Basket"></div>
+            <div class="Produtos"></div>
+        </div>
     </main>
     <hr>
     <footer>
@@ -66,5 +79,6 @@
         </p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
