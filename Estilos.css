@@ -1,0 +1,423 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main{
+    border: 10px groove;
+    border-color: rgb(223, 93, 46);
+}
+header{
+    width: 100%;
+    padding: 60px 1%;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+header.rodaremY{
+    background-color: rgb(223, 93, 46);
+    padding: 20px 1%;
+    transition: 3s;
+}
+header.rodaremY a{
+    color: #ffffff;
+    transition: 3s;
+}
+.conteinerCabecalho{
+    max-width: 1300px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#ImagemLogo{
+    width: 100px;
+    height: 90px;
+    cursor: pointer;
+}
+.conteinerCabecalho ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+}
+.contacto button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: rgb(255, 96, 38);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 3s
+}
+.conteinerCabecalho ul li{
+    margin-left: 20px;
+    list-style-type: none;
+    margin: auto 20px;
+}
+.conteinerCabecalho ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+.conteinerCabecalho ul li a button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffffff;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.conteinerCabecalho ul li a button:hover{
+    background-color: #333333;
+}
+.banner{
+    padding: 150px 0 150px; /* ajuste de espaçamento interno para visual similar */
+    background-image: url(imagens/IMGbacground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.banner h1{
+    color: #ffffff;
+    text-align: left;
+    padding-top: 150px;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.banner h1 samp{
+    color: orangered;
+}
+.banner h2{
+    color: #ffffff;
+    text-align: left;
+    font-size: 25px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.CursorImagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 50px 0;
+}
+img{
+    width: 100px;
+    height: 100px;
+    padding: 5px 0;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+#imagemDoCampo{
+    width: 400px;
+    height: 100%;
+}
+
+.ConteinerNoticia{
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: nowrap; /* força as duas divisões sempre lado a lado */
+    padding: 30px;
+}
+.ConteinerNoticia h1{
+    margin-top: -20px;
+}
+#IntroArea{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 40px;
+
+}
+.divisao-noticia {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    /* remove width: 50%; e usa flex-basis por parte específica abaixo */
+    flex: 0 0 auto;
+}
+.divisao-noticia:first-child{
+    border: 2px solid rgb(223, 93, 46);
+    border-radius: 10px;
+}
+.divisao-noticia h1{
+    text-align: center;
+    margin-top: 10px;
+}
+.divisao-noticia ul{
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    text-decoration: none;
+}
+.divisao-noticia ul li{
+    list-style-type: none;
+    margin: auto 20px;
+    gap: 10px;
+}
+.ConteinerNoticia .divisao-noticia:first-child button{
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(255, 96, 38);
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 3s;
+    margin-right: -100%;
+}
+.ConteinerNoticia .divisao-noticia:first-child button:hover{
+    background-color: #333333;
+}
+.noticiasNaoImportantes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; /* empilha cada notícia não importante verticalmente */
+    padding: 10px;
+    border-radius: 10px;
+    width: auto;
+    border: 2px solid rgb(223, 93, 46);
+}
+.noticiasNaoImportantes ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.noticiasNaoImportantes button{
+    background-color: rgb(255, 96, 38);
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-right: -70%;
+}
+.noticiasNaoImportantes button:hover{
+    background-color: #333333;
+}
+.ConteinerNoticia .divisao-noticia:first-child{
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+.ConteinerNoticia .divisao-noticia:last-child{
+    flex: 0 0 30%;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column; /* garante que itens internos fiquem empilhados */
+    gap: 20px;
+}
+@media (max-width: 700px){
+    .ConteinerNoticia{
+        flex-wrap: wrap;
+    }
+    .ConteinerNoticia .divisao-noticia{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+.ConteinerProdutos{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 30px;
+}
+.ConteinerProdutos div{
+    border: 2px solid rgb(223, 93, 46);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 8px;
+    width: calc(25% - 16px); /* 4 produtos por linha com espaçamento */
+    box-sizing: border-box;
+    /* layout interno para empilhar conteúdo e empurrar a altura */
+    display: flex;
+    flex-direction: column;/* empilha verticalmente */
+    justify-content: flex-start;/* alinha ao topo */
+    align-items:center;/* estica para preencher largura */
+
+    /* comportamento flex responsivo */
+    flex: 1 1 calc(22% - 16px);
+    min-width: 220px;
+    max-width: 1fr;
+
+}
+.ConteinerProdutos div img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 0;
+}
+.ConteinerProdutos button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(255, 96, 38);
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 3s;
+    border-color: #ffffff;
+}
+.ConteinerProdutos button:hover{
+    background-color: #333333;
+}
+.ConteinerModalidades{
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.ConteinerModalidades div{
+    border: 2px solid rgb(223, 93, 46);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: calc(33.33% - 16px); /* 3 modalidades por linha com espaçamento */
+    box-sizing: border-box;
+}
+.ConteinerModalidades div img{
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 0;
+}
+.ConteinerModalidades div img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.ConteinerModalidades button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(255, 96, 38);
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 3s;
+    border-color: #ffffff;
+}
+.ConteinerModalidades button:hover{
+    background-color: #333333;
+}
+@media (max-width: 900px){
+    .ConteinerProdutos div{
+        flex: 1 1 calc(45% - 16px); /* 2 produtos por linha */
+    }
+}
+@media (max-width: 600px){
+    .ConteinerProdutos div{
+        flex: 1 1 100%; /* 1 produto por linha */
+    }
+    .ConteinerModalidades div{
+        flex: 1 1 100%; /* 1 modalidade por linha */
+    }
+}
+.rodape{
+    background-color: rgb(223, 93, 46);
+}
+.ConteinerRodape{
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.conteinerSobreNos, .conteinerContactos, .conteinerOutros{
+    flex: 1 1 200px;
+    margin: 10px;
+}
+.conteinerSobreNos h3, .conteinerContactos h3, .conteinerOutros h3{
+    margin-bottom: 10px;
+}
+.conteinerContactos p{
+    margin: 5px 0;
+    line-height: 1.6;
+}
+.conteinerContactos ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-decoration: none;
+}
+.conteinerContactos ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.conteinerContactos p a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.conteinerContactos p a:hover{
+    cursor: pointer;
+}
+.conteinerOutros ul{
+    list-style: none;
+    padding: 0;
+}
+.conteinerOutros ul li{
+    margin: 8px 0;
+}
+.conteinerOutros ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.conteinerOutros ul li a:hover{
+    cursor: pointer;
+}
+.conteinerContactos ul li a:hover{
+    cursor: pointer;
+}
+.conteinerOutros button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.conteinerOutros button:hover{
+    background-color:#333333;
+    color: #ffffff;
+}
+.direitosReservados{
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
