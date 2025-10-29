@@ -9,23 +9,27 @@
 </head>
 <body>
     <header id="header">
-        <div class="conteinerCabecalho"><!--Inicio conteinerCabecalho-->
-            <div class="flex"><!--InicioFlex-->
-                <a href="index.html"><img id="ImagemLogo" src="imagens/Logo1.jpg" alt="logo-ADGremio"></a>
-               
-                <nav class="nav"><!--InicioNav-->
-                    <ul class="menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="SobreNos.html">Sobre Nós</a></li>
-                        <li><a href="Produtos.html">Produtos</a></li>
-                        <li><a href="#Disportos">Modalidades</a></li>
-                    </ul>
-                </nav><!--FimNav-->
-                <div class="contacto"><!--InicioContacto-->
-                    <a href="#conteinerContactos"><button class="butao-contacto">Contacto</button></a>
-                </div><!--FimContacto-->
-            </div> <!--FimFlex-->
-        </div> <!--FimconteinerCabecalho-->
+        <div class="conteinerCabecalho">
+            <div class="flex"><a href="index.html">
+                <img id="ImagemLogo" src="imagens/PrimLogoOff.jpg" alt="logo-ADGremio"></a>
+                <div class="burger" id="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <div id="menu-links" class="nav-wrapper">
+                    <nav class="nav"><ul class="menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#SobreNos">Sobre Nós</a></li>
+                            <li><a href="#Produtos">Produtos</a></li>
+                            <li><a href="#Disportos">Modalidades</a></li>
+                        </ul>
+                    </nav>
+                    <!--<div class="contacto"><a href="#conteinerContactos"><button class="butao-contacto">Contacto</button></a>
+                    </div>-->
+                </div>
+            </div>
+        </div>
     </header>
     <section class="banner">
         <h1>ASSOCIÇÃO DESPORTIVA <samp>GRÊMIO</samp></h1>
@@ -38,44 +42,47 @@
             <div class="divisao-noticia">
                 <h1>Associacao Desportiva Grêmio ja tem uma casa para praticantes de futebol</h1>
                 <ul>
-                    <li><img src="imagens/LogoPreta.png" alt="campo-de-futebol" id="imagemDoCampo"></li>
+                    <li><img src="imagens/ImagemDoCampo.PNG" alt="campo-de-futebol" id="imagemDoCampo"></li>
                     <li><p>A nova Associação desportiva da província da Huíla a <span><b>ADGrêmio</b></span> arrecadou os direitos do campo da <b>Nsa. Sra do Monte</b> localizado entre o cartodromo e o parque da Nsa Sra do monte no municipio do lubango, e a mesma já se encontra em reabilitação lo</p></li>
                 </ul>
                 <button type="button" href="#">Saber Mais</button>
             </div>
             <div class="divisao-noticia">
                 <div class="noticiasNaoImportantes">
-                    <h2>Notinia não importante1</h2>
+                    <h2>Ainda sem mais noticias</h2>
                     <ul>
                         <li><img src="imagens/LogoPreta.png" alt="campo-de-futebol"></li>
-                        <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></li>
+                        <li><p>Quando temos novidades estará disponível</p></li>
                     </ul>
                     <button type="button" href="#">Saber mais</button>
                 </div>
                 <div class="noticiasNaoImportantes">
-                    <h2>Noticia não importante 2</h2>
+                    <h2>Ainda sem mais noticias</h2>
                     <ul>
                         <li><img src="imagens/LogoPreta.png" alt="campo-de-futebol"></li>
-                        <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></li>
+                        <li><p>Quando temos novidades estará disponível</p></li>
                     </ul>
                     <button type="button" href="#">Saber mais</button>
                 </div>
                 <div class="noticiasNaoImportantes">
-                    <h2>Noticia não importante 3</h2>
+                    <h2>Ainda sem mais noticias</h2>
                     <ul>
                         <li><img src="imagens/LogoPreta.png" alt="campo-de-futebol"></li>
-                        <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></li>
+                        <li><p>Quando temos novidades estará disponível</p></li>
+                    </ul>
+                    <button type="button" href="#">Saber mais</button>
+                </div>
                 <div class="noticiasNaoImportantes">
-                    <h2>Noticia não importante 4</h2>
+                    <h2>Ainda sem mais noticias</h2>
                     <ul>
                         <li><img src="imagens/LogoPreta.png" alt="campo-de-futebol"></li>
-                        <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></li>
+                        <li><p>Quando temos novidades estará disponível</p></li>
                     </ul>
                     <button type="button">Saber mais</button>
                 </div>
             </div>
         </section>
-        <section class="produtos">
+        <section class="produtos" id="Produtos">
             <h1 id="IntroArea">Produtos em Destaque</h1>
             <div class="ConteinerProdutos">
                 <div class="Produto1">
@@ -94,7 +101,7 @@
                     <button type="button">15.000,00AOA</button>
                 </div>
                 <div class="produto4">
-                    <img src="imagens/LogoPreta.png" alt="produto4" id="ImgProduto">
+                    <img src="imagens/T-shirt azul Casual.jpg" alt="produto4" id="ImgProduto">
                     <p>T-shirt azul casual</p>
                     <button type="button">10.000,00AOA</button>
                 </div>
@@ -107,19 +114,19 @@
             <div class="ConteinerModalidades" id="Disportos">
                 <div class="Modalidade1">
                     <h2>Futebol</h2>
-                    <img src="imagens/LogoPreta.png" alt="ImgFutebol">
+                    <img src="imagens/Futebol.webp" alt="ImgFutebol">
                     <p>O futebol é a modalidade principal da AD Grêmio, com equipes para todas as idades e níveis de habilidade. Oferecemos treinos regulares, campeonatos internos e participação em ligas locais.</p>
                     <button type="button" href="#">Saber mais</button>
                 </div>
                 <div class="Modalidade2">
                     <h2>Basquetebol</h2>
-                    <img src="imagens/LogoPreta.png" alt="ImgBasquetebol">
+                    <img src="imagens/Basket.webp" alt="ImgBasquetebol">
                     <p>O basquetebol é uma modalidade dinâmica e emocionante. A AD Grêmio conta com quadras equipadas e treinadores qualificados para desenvolver habilidades técnicas e táticas dos jogadores.</p>
                     <button type="button" href="#">Saber mais</button>
                 </div>
                 <div class="Modalidade3">
                     <h2>Xadrez</h2>
-                    <img src="imagens/LogoPreta.png" alt="ImgXadrez">
+                    <img src="imagens/Xadrez.webp" alt="ImgXadrez">
                     <p>O xadrez é uma modalidade que estimula o raciocínio lógico e a estratégia. A AD Grêmio promove torneios regulares e aulas para iniciantes e jogadores avançados.</p>
                     <button type="button" href="#">Saber mais</button>
                 </div>
@@ -129,20 +136,31 @@
     <footer>
         <section class="rodape">
             <div class="ConteinerRodape">
-                <div class="ConteinerSobreNos">
+                <div class="conteinerSobreNos" id="SobreNos">
                     <h3>Sobre Nós</h3>
+                    <div class="sobreNosTexto">
+                        <p>
+                            A Associação Desportiva Grêmio é uma organização dedicada <br> a promover o esporte e o bem-estar na comunidade. <br> Estamos comprometidos com a excelência,<br>a inclusão e o espírito esportivo em todas as nossas atividades. <br> Junte-se a nós e faça parte desta jornada esportiva!
+<pre>
+    1º Missão/Visão:
+        Promover o esporte e o bem-estar na comunidade, <br> oferecendo oportunidades para que indivíduos <br> de todas as idades possam praticar esportes,<br>desenvolver habilidades e construir amizades duradouras.
+    2º foco:
+        Excelência, inclusão e espírito esportivo em todas as nossas atividades.
+</pre>
+                        </p>
+                    </div>
                 </div>
             <div class="conteinerContactos">
                 <h3>Contacto</h3>
                 <p>
                     Telefone: +244 923 456 789 <br>
-                    Email: <a href="">adgrmio@line.com</a>
+                    Email: geral@adgremio.com
                 </p>
                 <h3>Sociais</h3>
                 <ul>
-                    <li><a href="">facebook</a></li>
+                    <li><a href="https://www.facebook.com/people/Associa%C3%A7%C3%A3o-Desportiva-Gr%C3%AAmio/100063777828460/">facebook</a></li><!--
                     <li><a href="">instagram</a></li>
-                    <li><a href="">whatsApp</a></li>
+                    <li><a href="">whatsApp</a></li>-->
                 </ul>
             </div>
             <div class="conteinerOutros">
